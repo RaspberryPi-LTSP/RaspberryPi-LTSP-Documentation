@@ -6,7 +6,6 @@ If your server does not have an SD card slot, you may want to try a USB SD card 
 There is also nothing stopping you copying the files onto a USB stick to another computer to use its SD card reader.
 
 Assuming you are connecting the SD card to the server (via USB or internal SD card adapter), follow the guide below.
-(#some-markdown-heading)
 
 -------
 1.  Insert SD card into SD card reader on Ubuntu server. If the computer

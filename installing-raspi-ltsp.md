@@ -18,11 +18,10 @@ Lets get started!
     window to make it larger or put it in full screen.
     ![](images/image14.png)
 
-5.  Enter “wget
-    http://raw.github.com/gbaman/RaspberryPi-LTSP/master/Pi\_ltsp”
-    (Without quites) and hit enter. ![](images/image15.png)
+5.  Enter ```wget http://raw.github.com/gbaman/RaspberryPi-LTSP/master/Pi_ltsp```
+    and hit enter. ![](images/image15.png)
 
-6.  Once that completes, enter “sudo bash Pi\_ltsp” which will launch
+6.  Once that completes, enter ```sudo bash Pi_ltsp``` which will launch
     Raspi-LTSP. You must repeat this command every time you want to
     launch Raspi-LTSP. ![](images/image16.png)
 
@@ -73,5 +72,5 @@ Lets get started!
     hard drive in case of hard drive failure.
 
 ##Copying to SD card
-Now that you have installed RaspberryPi-LTSP, you need to copy the boot files to an SD card.   
+Now that you have installed RaspberryPi-LTSP, you need to copy the boot files to an SD card.
 [Copy boot files to SD card](sd-card-copy.md)
