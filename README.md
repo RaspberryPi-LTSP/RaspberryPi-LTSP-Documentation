@@ -44,7 +44,7 @@ On top of this, an old desktop or laptop is required to run the server. It does 
   - [Copy boot files to SD card](sd-card-copy.md)
 
 
-- [Managing users](manage-users/README.MD)
+- [Managing users](manage-users/README.md)
   - [Creating a new user](manage-users/creating-users.md)
   - [Deleting a user](manage-users/deleting-users.md)  
   - [Changing a users password](manage-users/change-password.md)  
@@ -57,13 +57,15 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 
 - [Collecting students work](collect-work.md)  
 
+- [Updating SD card image](sd-card-update.md) 
+
 - Shared folders
 
 - Epoptes classroom management software
 
 - Advanced options
-  - [Editing Raspbian outside of Raspi-LTSP](editing-outsite.md)  
-  - [Boot files explanation](boot-files.md)  
+  - [Editing Raspbian outside of Raspi-LTSP](advanced/editing-outsite.md)  
+  - [Boot files explanation](advanced/boot-files.md)  
   - Understanding network technologies
 
 

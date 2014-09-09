@@ -70,3 +70,8 @@ Wired Ethernet is preferable for installation.
 12. Once it finishes it will ask to reboot. Remove your installation CD
     from the drive and select “Restart now”.
     ![](images/image10.png)
+
+##Installing RaspberryPi-LTSP
+
+Now that Ubuntu is installed, you can move onto installing RaspberryPi-LTSP.   
+[Installing RaspberryPi-LTSP](installing-raspi-ltsp.md)

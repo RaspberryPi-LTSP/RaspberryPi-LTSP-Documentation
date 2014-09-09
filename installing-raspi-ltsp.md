@@ -71,3 +71,7 @@ Lets get started!
 16. You are recommended to check the Backup section of this manual on
     setting up an automatic backup of your students work to an external
     hard drive in case of hard drive failure.
+
+##Copying to SD card
+Now that you have installed RaspberryPi-LTSP, you need to copy the boot files to an SD card.   
+[Copy boot files to SD card](sd-card-copy.md)

@@ -17,8 +17,7 @@ The key things you need to know are
     ```sudo ltsp-chroot --arch armhf```
     To exit when you are finished, just type exit and hit enter.
 
--   The lts.conf file (LTSP armhf configuration file) is stored at
-    ```/opt/ltsp/armhf/etc/lts.conf```
+-   The lts.conf file (LTSP armhf configuration file) is stored at ```/opt/ltsp/armhf/etc/lts.conf```
 
 -   To manually compress the operating system for use after a change
     ```ltsp-update-image /opt/ltsp/armhf```
