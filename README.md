@@ -6,7 +6,7 @@ Raspberry Pi LTSP Documentation
 ===============================
 
 
-![](images/desktop-sonic-pi.png)
+![](images/desktop-sonic-pi.jpeg)
 
 
 ###Warning this documentation is still pre-alpha and is not finished.
@@ -36,11 +36,12 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 - System is incredibly simple to setup with full userguide, one trial school even got a year 7 student to set it up on his own, he had no issues.
 - Due to all the Raspberry Pis booting off the server, if you want to add a new piece of software to every Raspberry Pi in the classroom, update master image and reboot all Raspberry Pis, that is it...
 
-#[Getting started](installation/getting-started.md)
-
-
+#To get started [click here](installation/getting-started.md)
+   
+   
+   
 #Main documentation list
-![](images/raspi-ltsp-home.png)
+![](images/raspi-ltsp-home.jpeg)
 
 - [Getting started](installation/getting-started.md)  
   - [Installing Ubuntu](installation/installing-ubuntu.md)  
