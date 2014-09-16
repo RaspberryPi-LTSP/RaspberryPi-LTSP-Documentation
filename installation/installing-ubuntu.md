@@ -40,36 +40,36 @@ Wired Ethernet is preferable for installation.
     If in doubt, refer to your computer’s manual.
 
 4.  Ubuntu installer screen should load up as below. Select “Install
-    Ubuntu”![](images/image2.png)
+    Ubuntu”![](../images/image2.jpeg)
 
-5.  Select English and hit continue![](images/image3.png)
+5.  Select English and hit continue![](../images/image3.jpeg)
 
 6.  Check both the “Download updates while installing” and
     “Install-third party software” and click
-    continue.![](images/image4.png)
+    continue.![](../images/image4.jpeg)
 
 7.  Select to “Erase disk and install Ubuntu”. This will completely wipe
     your hard drive! No information currently stored on this computer
-    will remain. It will all be deleted ![](images/image5.png)
+    will remain. It will all be deleted ![](../images/image5.jpeg)
 
 8.  Select your location and time zone. For the UK, select London and
-    hit continue ![](images/image6.png)
+    hit continue ![](../images/image6.jpeg)
 
 9.  Select your keyboard. The default is likely correct. If living in
     the UK, select “English (UK)” and select
-    continue.![](images/image7.png)
+    continue.![](../images/image7.jpeg)
 
 10. Now enter your login details. These will be the administer login
     details on the server. It is recommended you leave the computer name
-    at default.![](images/image8.png)
+    at default.![](../images/image8.jpeg)
 
 11. Now wait for Ubuntu to install. This normally takes roughly 10-20
     minutes, depending on internet speed and computer processing power.
-    ![](images/image9.png)
+    ![](../images/image9.jpeg)
 
 12. Once it finishes it will ask to reboot. Remove your installation CD
     from the drive and select “Restart now”.
-    ![](images/image10.png)
+    ![](../images/image10.jpeg)
 
 ##Installing RaspberryPi-LTSP
 

@@ -21,4 +21,4 @@ Other than bootup, for most application no. Bootup takes roughly 30 seconds long
 Yes! As long as you are running at least version 0.7.2 and have updated the operating system and SD card image.
 To do that, run "Update-all" to update all software on the virtual OS followed by "Change-IP" and update the files on your SD card with the new ones.
 
-![](images/raspi-desktop.png)
+![](images/raspi-desktop.jpeg)

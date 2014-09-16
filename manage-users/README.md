@@ -1,6 +1,6 @@
 Managing user accounts
 ----------------------
-![](../images/manage-users-menu.png)
+![](../images/manage-users-menu.jpeg)
 The Manage user users submenu contains all the tools for working with the users and groups on the system.
 Although there are graphical tools available that perform similar functions, it is much quicker using the built
 in tools.

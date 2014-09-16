@@ -1,6 +1,6 @@
 Getting started with RaspberryPi-LTSP
 ===============
-![](images/raspi-login.png)
+![](../images/raspi-login.jpeg)
 
 
 #Ok, I am interested... How do I get started?

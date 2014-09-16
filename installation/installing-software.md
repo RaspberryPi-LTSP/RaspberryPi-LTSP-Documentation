@@ -12,16 +12,16 @@ software or you can select “Install-Custom-package” and enter the name
 of the software. This is exactly the same as doing “apt-get install
 SoftwareName”.
 
-1.  Select “Install-Program” and hit enter. ![](images/image37.png)
+1.  Select “Install-Program” and hit enter. ![](../images/image37.jpeg)
 
 2.  Select the package you wish to install. If it isn’t in the list
     select “Install-Custom-Package” and enter the name of the package.
-    ![](images/image38.png)
+    ![](../images/image38.jpeg)
 
-3.  Once finished, select “Finished” ![](images/image39.png)
+3.  Once finished, select “Finished” ![](../images/image39.jpeg)
 
 4.  When asked if you are finished, select yes.
-    ![](images/image40.png)
+    ![](../images/image40.jpeg)
 
 5.  If any changes were made, it will recompress the operating system to
     prepare it for the Raspberry Pis.
