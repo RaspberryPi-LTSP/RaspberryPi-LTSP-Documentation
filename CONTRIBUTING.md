@@ -9,6 +9,9 @@ The documentation is stored in a Github repository which can be found [here](htt
 Don't worry, it is very easy to pick up, [here is a handy guide to get your started](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
    
 ##Do you have a nice text editor you recommend using to write it with?
+![](images/atom-1.jpeg)
+
+   
 Github's own text editor, Atom is a great text editor to write markdown with, it has a nice live markdown renderer built in.   
 You can download Atom from [here](https://atom.io/).   
 All the markdown files end in .md.
