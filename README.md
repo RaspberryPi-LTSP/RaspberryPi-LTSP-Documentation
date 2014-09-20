@@ -81,4 +81,4 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 #Contributing
 All the documentation written in markdown can be found in the [Github repository](https://github.com/RaspberryPi-LTSP/RaspberryPi-LTSP-Documentation).   
 If you see **issues/typos/mistakes/etc** in this documentation please feel free to send in [pull requests](https://github.com/RaspberryPi-LTSP/RaspberryPi-LTSP-Documentation/pulls) to fix them or open an [issue](https://github.com/RaspberryPi-LTSP/RaspberryPi-LTSP-Documentation/issues).  
-If you want to **contribute** to the documentation (**please do!!**) then check out the [contributing guide](contributing.md)
+If you want to **contribute** to the documentation (**please do!!**) then check out the [contributing guide](CONTRIBUTING.md)
