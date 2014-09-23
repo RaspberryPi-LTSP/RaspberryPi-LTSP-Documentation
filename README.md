@@ -60,7 +60,7 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 
 - [Updating SD card image](sd-card-update.md) 
 
-- Shared folders
+- [Shared folders](shared-folders/README.md)
 
 - Epoptes classroom management software
 
