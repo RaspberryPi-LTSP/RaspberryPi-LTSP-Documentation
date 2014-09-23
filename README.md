@@ -1,4 +1,4 @@
-[Home](README.md)    | [Getting started](installation/getting-started.md)     | [Managing users](manage-users/README.md) | [Collecting work](collect-work.md) | Shared folders | [Backups](backups/README.md) | [Advanced options](advanced/README.md) 
+[Home](README.md)    | [Getting started](installation/getting-started.md)     | [Managing users](manage-users/README.md) | [Collecting work](collect-work.md) | [Shared folders](shared-folders/README.md) | [Backups](backups/README.md) | [Advanced options](advanced/README.md) 
 | :-----------: |:-------------:| :-----:| :-----:| :-----:| :-----:| :-----:| 
 
 
@@ -64,7 +64,7 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 
 - [Updating SD card image](sd-card-update.md) 
 
-- Shared folders
+- [Shared folders](shared-folders/README.md)
 
 - Epoptes classroom management software
 
