@@ -82,3 +82,8 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 All the documentation written in markdown can be found in the [Github repository](https://github.com/RaspberryPi-LTSP/RaspberryPi-LTSP-Documentation).   
 If you see **issues/typos/mistakes/etc** in this documentation please feel free to send in [pull requests](https://github.com/RaspberryPi-LTSP/RaspberryPi-LTSP-Documentation/pulls) to fix them or open an [issue](https://github.com/RaspberryPi-LTSP/RaspberryPi-LTSP-Documentation/issues).  
 If you want to **contribute** to the documentation (**please do!!**) then check out the [contributing guide](CONTRIBUTING.md)
+
+#Support
+Having issues with Raspi-LTSP, have a general question or just want some help setting up Raspi-LTSP in your school?   
+[Check out the support page on details of how to get in touch.](support.md)
+   
