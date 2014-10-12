@@ -35,10 +35,12 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 - No more needing to purchase 100s of SD cards for a single school, just need enough for 1 class set.
 - System is incredibly simple to setup with full userguide, one trial school even got a year 7 student to set it up on his own, he had no issues.
 - Due to all the Raspberry Pis booting off the server, if you want to add a new piece of software to every Raspberry Pi in the classroom, update master image and reboot all Raspberry Pis, that is it...
+<br>
+<br>
 
 #To get started [click here](installation/getting-started.md)
    
-   
+<br>   
    
 #Main documentation list
 ![](images/raspi-ltsp-home.jpeg)
