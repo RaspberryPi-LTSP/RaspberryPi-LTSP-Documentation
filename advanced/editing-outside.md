@@ -13,19 +13,14 @@ manually.
 
 The key things you need to know are
 
--   The Raspbian operating system is stored at
-    ```/opt/ltsp/armhf```
+- The Raspbian operating system is stored at ```/opt/ltsp/armhf```
 
--   To “chroot” into it (basically allows you to interact with it like a
-    normal Raspberry Pi
-    ```sudo ltsp-chroot --arch armhf```
-    To exit when you are finished, just type exit and hit enter.
+- To “chroot” into it (basically allows you to interact with it like a normal Raspberry Pi ```sudo ltsp-chroot --arch armhf``` 
+  To exit when you are finished, just type exit and hit enter.
 
--   The lts.conf file (LTSP armhf configuration file) is stored at ```/opt/ltsp/armhf/etc/lts.conf```
+- The lts.conf file (LTSP armhf configuration file) is stored at ```/opt/ltsp/armhf/etc/lts.conf```
 
--   To manually compress the operating system for use after a change
-    ```ltsp-update-image /opt/ltsp/armhf```
+- To manually compress the operating system for use after a change ```ltsp-update-image /opt/ltsp/armhf``` 
+**(this is extremely important you do this after a change!)**
 
--   The raw boot files before configuration changes have been made can
-    be found at
-    <https://github.com/gbaman/RaspberryPi-LTSP/tree/master/boot>
+- The raw boot files before configuration changes have been made can be found at [here](https://github.com/gbaman/RaspberryPi-LTSP/tree/master/boot)

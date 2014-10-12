@@ -47,7 +47,8 @@
               
               <div class="markdown-body entry-content">
                 <table>
-<thead><tr>
+<thead>
+<tr>
 <th align="center"><a href="../index.html">Home</a></th>
 <th align="center"><a href="../installation/getting-started.html">Getting started</a></th>
 <th align="center"><a href="../manage-users/index.html">Managing users</a></th>
@@ -55,9 +56,13 @@
 <th align="center"><a href="../shared-folders/index.html">Shared folders</a></th>
 <th align="center"><a href="../backups/index.html">Backups</a></th>
 <th align="center"><a href="../advanced/index.html">Advanced options</a></th>
-</tr></thead>
-<tbody></tbody>
-</table><h1>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<h1>
 <a name="user-content-understanding-raspberrypi-ltsp-network-technologies" class="anchor" href="#understanding-raspberrypi-ltsp-network-technologies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Understanding RaspberryPi LTSP network technologies</h1>
 
 <p>RaspberryPi LTSP has 2 main network technologies available to use.
@@ -78,13 +83,17 @@ Keep in mind though RaspberryPi LTSP's default is NBD.</p>
 <li>Well supported on everything.</li>
 <li>All changes made to Raspbian from the server are live! No need to recompress the operating system.</li>
 <li>Very useful for testing and trying out different changes</li>
-</ul><h3>
+</ul>
+
+<h3>
 <a name="user-content-disadvantages" class="anchor" href="#disadvantages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Disadvantages</h3>
 
 <ul>
 <li>No compression enabled by default with LTSP so slower.</li>
 <li>Lacking some newer error detection etc.</li>
-</ul><h2>
+</ul>
+
+<h2>
 <a name="user-content-nbd" class="anchor" href="#nbd" aria-hidden="true"><span class="octicon octicon-link"></span></a>NBD</h2>
 
 <p>NBD is a much newer file sharing technology that is the default for RaspberryPi-LTSP.<br>
@@ -96,13 +105,17 @@ With NBD, we have enabled squashfs compression to reduce network traffic by roug
 <ul>
 <li>Raspberry Pis boos faster and load large applications faster.</li>
 <li>Consierably less network traffic transfered across the network due to compression (roughly 40% less).</li>
-</ul><h3>
+</ul>
+
+<h3>
 <a name="user-content-disadvantages-1" class="anchor" href="#disadvantages-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Disadvantages</h3>
 
 <ul>
 <li>Changes are not live. You must recompress the operating system after each change with takes 5-10 minuets.</li>
 <li>After a recompress of the operating system, all clients need rebooted. </li>
-</ul><h2>
+</ul>
+
+<h2>
 <a name="user-content-which-should-i-use-then" class="anchor" href="#which-should-i-use-then" aria-hidden="true"><span class="octicon octicon-link"></span></a>Which should I use then?</h2>
 
 <p>Basically if you are testing out a number of changes (and don't want to wait 10 minuets for each test), then switch to NFS.<br>
@@ -114,13 +127,17 @@ NBD is much quicker and lighter on your network. This is especially important if
 <a name="user-content-i-want-to-switch-the-network-technology-i-am-using-how-do-i-do-this" class="anchor" href="#i-want-to-switch-the-network-technology-i-am-using-how-do-i-do-this" aria-hidden="true"><span class="octicon octicon-link"></span></a>I want to switch the network technology I am using, how do I do this?</h2>
 
 <ol>
-<li><p>First navigate to the <code>other</code> submenu in RaspberryPi LTSP and select <code>Network-Technology</code>.<br><a href="../images/other-1.jpeg" target="_blank"><img src="../simages/other-1.jpeg" alt="" style="max-width:100%;"></a></p></li>
-<li><p>Select the option you want to change to.<br><a href="../images/other-2.jpeg" target="_blank"><img src="../simages/other-2.jpeg" alt="" style="max-width:100%;"></a></p></li>
+<li><p>First navigate to the <code>other</code> submenu in RaspberryPi LTSP and select <code>Network-Technology</code>.<br>
+<a href="../images/other-1.jpeg" target="_blank"><img src="../simages/other-1.jpeg" alt="" style="max-width:100%;"></a>   </p></li>
+<li><p>Select the option you want to change to.<br>
+<a href="../images/other-2.jpeg" target="_blank"><img src="../simages/other-2.jpeg" alt="" style="max-width:100%;"></a>   </p></li>
 <li><p>Return to the main menu and run <code>Update-SD</code> and switching to a different network changes some configuration files on the SD card.<br>
 (For those curious, only the chtmlline.txt file is changed. It is swapped out with chtmllineNFS.txt or chtmllineNBD.txt).
-<a href="../images/update-sd-1.jpeg" target="_blank"><img src="../simages/update-sd-1.jpeg" alt="" style="max-width:100%;"></a></p></li>
-<li><p>Load the new generated boot files onto an SD card the load it up on a Raspberry Pi. For how to do this, see <a href="../installation/sd-card-copy.html">SD-Card-Copy</a>.<br><a href="../images/update-sd-3.jpeg" target="_blank"><img src="../simages/update-sd-3.jpeg" alt="" style="max-width:100%;"></a></p></li>
+<a href="../images/update-sd-1.jpeg" target="_blank"><img src="../simages/update-sd-1.jpeg" alt="" style="max-width:100%;"></a>   </p></li>
+<li><p>Load the new generated boot files onto an SD card the load it up on a Raspberry Pi. For how to do this, see <a href="../installation/sd-card-copy.html">SD-Card-Copy</a>.<br>
+<a href="../images/update-sd-3.jpeg" target="_blank"><img src="../simages/update-sd-3.jpeg" alt="" style="max-width:100%;"></a>   </p></li>
 </ol>
+
               </div>
             </div>
           </div>

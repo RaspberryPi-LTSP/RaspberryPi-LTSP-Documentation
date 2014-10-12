@@ -47,7 +47,8 @@
               
               <div class="markdown-body entry-content">
                 <table>
-<thead><tr>
+<thead>
+<tr>
 <th align="center"><a href="index.html">Home</a></th>
 <th align="center"><a href="installation/getting-started.html">Getting started</a></th>
 <th align="center"><a href="manage-users/index.html">Managing users</a></th>
@@ -55,9 +56,13 @@
 <th align="center"><a href="shared-folders/index.html">Shared folders</a></th>
 <th align="center"><a href="backups/index.html">Backups</a></th>
 <th align="center"><a href="advanced/index.html">Advanced options</a></th>
-</tr></thead>
-<tbody></tbody>
-</table><h1>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<h1>
 <a name="user-content-raspberry-pi-ltsp-documentation" class="anchor" href="#raspberry-pi-ltsp-documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Raspberry Pi LTSP Documentation</h1>
 
 <p><a href="images/desktop-sonic-pi.jpeg" target="_blank"><img src="simages/desktop-sonic-pi.jpeg" alt="" style="max-width:100%;"></a></p>
@@ -80,7 +85,9 @@ Its main features include</p>
 <strong>Centralised master operating system</strong> - All the Raspberry Pis boot a single master operating system from the server every boot.</li>
 <li>
 <strong>Automated work submission and collection system</strong> - A teacher can easily collect work from students digitally for marking without the need for printing.</li>
-</ul><p>Raspi-LTSP requires a wired Ethernet connection between the server machine and every Raspberry Pi. Infrastructure for this is usually already included in ICT classrooms but if not, a simple network is relatively cheap and simple to set up.
+</ul>
+
+<p>Raspi-LTSP requires a wired Ethernet connection between the server machine and every Raspberry Pi. Infrastructure for this is usually already included in ICT classrooms but if not, a simple network is relatively cheap and simple to set up.
 On top of this, an old desktop or laptop is required to run the server. It does not need to be powerful as will be running Ubuntu Linux, a very lightweight operating system.  </p>
 
 <p><strong>Wifi is not supported</strong> due to it being unreliable and slow</p>
@@ -96,7 +103,9 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 <li>No more needing to purchase 100s of SD cards for a single school, just need enough for 1 class set.</li>
 <li>System is incredibly simple to setup with full userguide, one trial school even got a year 7 student to set it up on his own, he had no issues.</li>
 <li>Due to all the Raspberry Pis booting off the server, if you want to add a new piece of software to every Raspberry Pi in the classroom, update master image and reboot all Raspberry Pis, that is it...</li>
-</ul><h1>
+</ul>
+
+<h1>
 <a name="user-content-to-get-started-click-here" class="anchor" href="#to-get-started-click-here" aria-hidden="true"><span class="octicon octicon-link"></span></a>To get started <a href="installation/getting-started.html">click here</a>
 </h1>
 
@@ -105,9 +114,9 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 
 <p><a href="images/raspi-ltsp-home.jpeg" target="_blank"><img src="simages/raspi-ltsp-home.jpeg" alt="" style="max-width:100%;"></a></p>
 
-<ul>
-<li>
-<p><a href="installation/getting-started.html">Getting started</a>  </p>
+<h2>
+<a name="user-content-getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="installation/getting-started.html">Getting started</a>
+</h2>
 
 <ul>
 <li>
@@ -116,9 +125,10 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 <li><a href="installation/installing-raspi-ltsp.html">Installing RaspberryPi LTSP</a></li>
 <li><a href="installation/sd-card-copy.html">Copy boot files to SD card</a></li>
 </ul>
-</li>
-<li>
-<p><a href="manage-users/index.html">Managing users</a></p>
+
+<h2>
+<a name="user-content-managing-users" class="anchor" href="#managing-users" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="manage-users/index.html">Managing users</a>
+</h2>
 
 <ul>
 <li><a href="manage-users/creating-users.html">Creating a new user</a></li>
@@ -132,29 +142,48 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 <a href="manage-users/staff-sudo.html">Userstanding staff and sudo options</a><br>
 </li>
 </ul>
-</li>
-<li><p><a href="installing-software.html">Installing additional software</a>  </p></li>
-<li><p><a href="backups/index.html">Configuring automatic backups</a></p></li>
-<li><p><a href="collect-work.html">Collecting students work</a>  </p></li>
-<li><p><a href="sd-card-update.html">Updating SD card image</a> </p></li>
-<li><p><a href="shared-folders/index.html">Shared folders</a></p></li>
-<li><p>Epoptes classroom management software</p></li>
-<li>
-<p><a href="advanced/index.html">Advanced options</a></p>
+
+<h2>
+<a name="user-content-general-features" class="anchor" href="#general-features" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="general-features.html">General features</a>
+</h2>
 
 <ul>
 <li>
-<a href="advanced/editing-outsite.html">Editing Raspbian outside of Raspi-LTSP</a><br>
+<a href="installation/installing-software.html">Installing additional software</a><br>
+</li>
+<li><a href="backups/index.html">Configuring automatic backups</a></li>
+<li>
+<a href="collect-work.html">Collecting students work</a><br>
+</li>
+<li>
+<a href="sd-card-update.html">Updating SD card image</a> </li>
+<li><a href="shared-folders/index.html">Shared folders</a></li>
+<li>Epoptes classroom management software (Documentation not complete yet)</li>
+</ul>
+
+<h2>
+<a name="user-content-advanced-options" class="anchor" href="#advanced-options" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="advanced/index.html">Advanced options</a>
+</h2>
+
+<ul>
+<li>
+<a href="advanced/editing-outside.html">Editing Raspbian outside of Raspi-LTSP</a><br>
 </li>
 <li>
 <a href="advanced/boot-files.html">Boot files explanation</a><br>
 </li>
 <li><a href="advanced/network-technologies">Understanding network technologies</a></li>
 </ul>
-</li>
-<li><p>Troubleshooting</p></li>
-<li><p><a href="faq.html">Frequently asked questions</a></p></li>
-</ul><h1>
+
+<h2>
+<a name="user-content-other" class="anchor" href="#other" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other</h2>
+
+<ul>
+<li>Troubleshooting (Documentation not complete yet)</li>
+<li><a href="faq.html">Frequently asked questions</a></li>
+</ul>
+
+<h1>
 <a name="user-content-contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h1>
 
 <p>All the documentation written in markdown can be found in the <a href="https://github.com/RaspberryPi-LTSP/RaspberryPi-LTSP-Documentation">Github repository</a>.<br>
@@ -164,7 +193,9 @@ If you want to <strong>contribute</strong> to the documentation (<strong>please 
 <h1>
 <a name="user-content-support" class="anchor" href="#support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support</h1>
 
-<p>Having issues with Raspi-LTSP, have a general question or just want some help setting up Raspi-LTSP in your school?<br><a href="support.html">Check out the support page on details of how to get in touch.</a></p>
+<p>Having issues with Raspi-LTSP, have a general question or just want some help setting up Raspi-LTSP in your school?<br>
+<a href="support.html">Check out the support page on details of how to get in touch.</a></p>
+
               </div>
             </div>
           </div>

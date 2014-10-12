@@ -47,7 +47,8 @@
               
               <div class="markdown-body entry-content">
                 <table>
-<thead><tr>
+<thead>
+<tr>
 <th align="center"><a href="../index.html">Home</a></th>
 <th align="center"><a href="../installation/getting-started.html">Getting started</a></th>
 <th align="center"><a href="../manage-users/index.html">Managing users</a></th>
@@ -55,9 +56,13 @@
 <th align="center"><a href="../shared-folders/index.html">Shared folders</a></th>
 <th align="center"><a href="../backups/index.html">Backups</a></th>
 <th align="center"><a href="../advanced/index.html">Advanced options</a></th>
-</tr></thead>
-<tbody></tbody>
-</table><h2>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<h2>
 <a name="user-content-editing-the-operating-system-outside-of-raspi-ltsp" class="anchor" href="#editing-the-operating-system-outside-of-raspi-ltsp" aria-hidden="true"><span class="octicon octicon-link"></span></a>Editing the operating system outside of Raspi-LTSP</h2>
 
 <p>Although Raspi-LTSP allows you to perform most actions a standard user
@@ -69,26 +74,15 @@ manually.</p>
 <p>The key things you need to know are</p>
 
 <ul>
-<li>
-<p>The Raspbian operating system is stored at</p>
-
-<pre lang="/opt/ltsp/armhf```"><code>
--   To “chroot” into it (basically allows you to interact with it like a
-normal Raspberry Pi
-```sudo ltsp-chroot --arch armhf```
-To exit when you are finished, just type exit and hit enter.
-
--   The lts.conf file (LTSP armhf configuration file) is stored at ```/opt/ltsp/armhf/etc/lts.conf```
-
--   To manually compress the operating system for use after a change
-```ltsp-update-image /opt/ltsp/armhf```
-
--   The raw boot files before configuration changes have been made can
-be found at
-&lt;https://github.com/gbaman/RaspberryPi-LTSP/tree/master/boot&gt;
-</code></pre>
-</li>
+<li><p>The Raspbian operating system is stored at <code>/opt/ltsp/armhf</code></p></li>
+<li><p>To “chroot” into it (basically allows you to interact with it like a normal Raspberry Pi <code>sudo ltsp-chroot --arch armhf</code> 
+To exit when you are finished, just type exit and hit enter.</p></li>
+<li><p>The lts.conf file (LTSP armhf configuration file) is stored at <code>/opt/ltsp/armhf/etc/lts.conf</code></p></li>
+<li><p>To manually compress the operating system for use after a change <code>ltsp-update-image /opt/ltsp/armhf</code> 
+<strong>(this is extremely important you do this after a change!)</strong></p></li>
+<li><p>The raw boot files before configuration changes have been made can be found at <a href="https://github.com/gbaman/RaspberryPi-LTSP/tree/master/boot">here</a></p></li>
 </ul>
+
               </div>
             </div>
           </div>

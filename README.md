@@ -43,39 +43,35 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 #Main documentation list
 ![](images/raspi-ltsp-home.jpeg)
 
-- [Getting started](installation/getting-started.md)  
+##[Getting started](installation/getting-started.md)    
   - [Installing Ubuntu](installation/installing-ubuntu.md)  
   - [Installing RaspberryPi LTSP](installation/installing-raspi-ltsp.md)
   - [Copy boot files to SD card](installation/sd-card-copy.md)
 
 
-- [Managing users](manage-users/README.md)
+##[Managing users](manage-users/README.md)   
   - [Creating a new user](manage-users/creating-users.md)
   - [Deleting a user](manage-users/deleting-users.md)  
   - [Changing a users password](manage-users/change-password.md)  
   - [Userstanding staff and sudo options](manage-users/staff-sudo.md)  
 
+##[General features](general-features.md)
 
-- [Installing additional software](installing-software.md)  
-
+- [Installing additional software](installation/installing-software.md)  
 - [Configuring automatic backups](backups/README.md)
-
 - [Collecting students work](collect-work.md)  
-
 - [Updating SD card image](sd-card-update.md) 
-
 - [Shared folders](shared-folders/README.md)
+- Epoptes classroom management software (Documentation not complete yet)
 
-- Epoptes classroom management software
-
-- [Advanced options](advanced/README.md)
-  - [Editing Raspbian outside of Raspi-LTSP](advanced/editing-outsite.md)  
+##[Advanced options](advanced/README.md)
+  - [Editing Raspbian outside of Raspi-LTSP](advanced/editing-outside.md)  
   - [Boot files explanation](advanced/boot-files.md)  
   - [Understanding network technologies](advanced/network-technologies)
 
+##Other
 
-- Troubleshooting
-
+- Troubleshooting (Documentation not complete yet)
 - [Frequently asked questions](faq.md)
 
 #Contributing
