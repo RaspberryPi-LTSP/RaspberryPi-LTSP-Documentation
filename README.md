@@ -9,11 +9,6 @@ Raspberry Pi LTSP Documentation
 ![](images/desktop-sonic-pi.jpeg)
 
 
-###Warning this documentation is still pre-alpha and is not finished.
-The old documentation can still be downloaded from [here](http://bit.ly/1l26rti)
-
-
-
 
 #What is Raspi-LTSP?
 Raspi-LTSP is a utility for setting up infrastructure required for a classroom set of Raspberry Pis.

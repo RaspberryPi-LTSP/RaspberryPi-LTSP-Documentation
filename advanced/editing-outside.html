@@ -83,6 +83,18 @@ To exit when you are finished, just type exit and hit enter.</p></li>
 <li><p>The raw boot files before configuration changes have been made can be found at <a href="https://github.com/gbaman/RaspberryPi-LTSP/tree/master/boot">here</a></p></li>
 </ul>
 
+<h2>
+<a name="user-content-an-example---deleting-minecraft-pi-edtion" class="anchor" href="#an-example---deleting-minecraft-pi-edtion" aria-hidden="true"><span class="octicon octicon-link"></span></a>An example - Deleting Minecraft Pi edtion</h2>
+
+<p>Lets say you want to run a command in the Raspbian operating system, which is stored on the server (and each Pi boots from).<br>
+For example, lets say you want to remove Minecraft-Pi edition (which is installed by default).<br>
+To do this, open a terminal on the server and enter <code>sudo ltsp-chroot --arch armhf</code> (<code>sudo ltsp-chroot</code> also works on its own if you have no other LTSP chroots).<br>
+You are now inside the Raspbian OS which is running emulated on the server (via chroot). You can run nearly any command you could run on a Raspberry Pi here, 
+including <code>apt-get purge minecraft-pi</code> which deletes Minecraft-Pi edition. When you have finished all your changes, enter <code>exit</code> and you will be returned to a normal server shell.<br>
+Finally, <strong>you must recompress the operating system!</strong> You have 2 options on how to do this.<br>
+1. From the commandline with <code>ltsp-update-image /opt/ltsp/armhf</code>.
+2. From Raspi-LTSP in the <code>Other menu</code> and <code>NBD-recompress</code>.</p>
+
               </div>
             </div>
           </div>
