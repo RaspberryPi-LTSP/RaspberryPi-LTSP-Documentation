@@ -47,6 +47,7 @@ On top of this, an old desktop or laptop is required to run the server. It does 
   - [Deleting a user](manage-users/deleting-users.md)  
   - [Changing a users password](manage-users/change-password.md)  
   - [Userstanding staff and sudo options](manage-users/staff-sudo.md)  
+  - [Migrating user data (for moving to a new Raspi-LTSP server)](manage-users/migration.md)
 
 ##[General features](general-features.md)
 

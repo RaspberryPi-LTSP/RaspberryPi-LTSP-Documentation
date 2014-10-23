@@ -23,4 +23,4 @@ Finally when the installation is complete you must copy the generated SD card bo
 1. [Installing RaspberryPi-LTSP](installing-raspi-ltsp.md)
 1. [Copying files to SD card](sd-card-copy.md)
 
-Once completed, you may want to change some of the other options in Raspi-LTSP, the full documentation list can be found
+Once completed, you may want to change some of the other options in Raspi-LTSP, the full documentation list can be found back on the [home page](../README.md).
