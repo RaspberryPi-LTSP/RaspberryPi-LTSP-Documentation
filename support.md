@@ -6,7 +6,7 @@ Is a few ways you can contact me.
 ##Email
 The simple one. I will try and reply within a week (although is usually more like an hour). If I don't reply within a week, email me again!
 
-Address is support at pi dash ltsp dot net
+Email address is  *support at pi-ltsp dot net*
 
 ##IRC
 If you want instant help, I sit on freenode IRC in the #ltsp channel quite a lot and you can drop me a private message.   
