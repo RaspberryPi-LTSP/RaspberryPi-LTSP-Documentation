@@ -20,12 +20,14 @@ Installation
 
 Creating Ubuntu Installation Disk
 ---------------------------------
-
-### Windows
-
-### Mac
-
-### Ubuntu Linux
+First you need to create an installation media for installing Ubuntu on your server computer. This can be in the form of
+a disk or a USB flash drive. Creating and booting from a disk is easier for beginners.   
+Ubuntu have a number of guides for different operating systems for creating an Ubuntu 14.04 installation disk from 
+different operating systems.   
+Select the one you are going to create the installation DVD from. You will need a standard writeable DVD (and not a CD) for this.      
+- [Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)   
+- [Mac](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)   
+- [Ubuntu Linux](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-ubuntu)   
 
 Installing Ubuntu 14.04
 -----------------------
@@ -44,7 +46,8 @@ Wired Ethernet is preferable for installation.
     If in doubt, refer to your computer’s manual.
 
 4.  Ubuntu installer screen should load up as below. Select “Install
-    Ubuntu”![](../images/image2.jpeg)
+    Ubuntu”   
+    ![](../images/image2.jpeg)
 
 5.  Select English and hit continue![](../images/image3.jpeg)
 
