@@ -74,30 +74,36 @@ Lets get started!</p>
 earlier.<br>
 <a href="../images/image11.jpeg" target="_blank"><img src="../simages/image11.jpeg" alt="" style="max-width:100%;"></a></p></li>
 <li><p>Select the search button in the top left corner.<br>
-<a href="../images/image12.jpeg" target="_blank"><img src="../simages/image12.jpeg" alt="" style="max-width:100%;"></a></p></li>
+<a href="../images/install-ltsp-3.jpeg" target="_blank"><img src="../simages/install-ltsp-3.jpeg" alt="" style="max-width:100%;"></a></p></li>
 <li><p>Search for and select “Terminal”. You can also just hit Ctrl + Alt +
 T.<br>
-<a href="../images/image13.jpeg" target="_blank"><img src="../simages/image13.jpeg" alt="" style="max-width:100%;"></a></p></li>
+<a href="../images/install-ltsp-4.jpeg" target="_blank"><img src="../simages/install-ltsp-4.jpeg" alt="" style="max-width:100%;"></a></p></li>
 <li><p>You will then be presented with a terminal. Raspi-LTSP runs inside a
 terminal window. You may find it useful to resize the terminal
 window to make it larger or put it in full screen.<br>
-<a href="../images/image14.jpeg" target="_blank"><img src="../simages/image14.jpeg" alt="" style="max-width:100%;"></a></p></li>
-<li><p>Enter <code>wget http://raw.github.com/gbaman/RaspberryPi-LTSP/master/Pi_ltsp</code>
-and hit enter.<br>
-<a href="../images/image15.jpeg" target="_blank"><img src="../simages/image15.jpeg" alt="" style="max-width:100%;"></a></p></li>
+<a href="../images/install-ltsp-5.jpeg" target="_blank"><img src="../simages/install-ltsp-5.jpeg" alt="" style="max-width:100%;"></a></p></li>
+<li><p>Enter <code>wget --content-disposition http://pi-ltsp.net/downloadalpha</code>
+and hit enter. This downloads the RaspberryPi-LTSP script. The main script is called <code>Pi_ltsp</code>.<br>
+<a href="../images/install-ltsp-7.jpeg" target="_blank"><img src="../simages/install-ltsp-7.jpeg" alt="" style="max-width:100%;"></a></p></li>
 <li><p>Once that completes, enter <code>sudo bash Pi_ltsp</code> which will launch
-Raspi-LTSP. You must repeat this command every time you want to
-launch Raspi-LTSP.<br>
-<a href="../images/image16.jpeg" target="_blank"><img src="../simages/image16.jpeg" alt="" style="max-width:100%;"></a></p></li>
-<li><p>Enter your password as the application must be run as administrator.<br>
-<a href="../images/image17.jpeg" target="_blank"><img src="../simages/image17.jpeg" alt="" style="max-width:100%;"></a></p></li>
-<li><p>Raspi-LTSP will prompt you if you would like to run a full install.
-Select yes.<br>
-<a href="../images/image18.jpeg" target="_blank"><img src="../simages/image18.jpeg" alt="" style="max-width:100%;"></a></p></li>
+Raspi-LTSP. A desktop icon will be created when the software installs but 
+you can always use this command to manually launch Raspi-LTSP.<br>
+<a href="../images/install-ltsp-9.jpeg" target="_blank"><img src="../simages/install-ltsp-9.jpeg" alt="" style="max-width:100%;"></a></p></li>
+<li><p>Enter your password as the application must be run as administrator 
+(nothing will look like it is being entered, this is a Linux security feature so don't worry, it is being entered).<br>
+<a href="../images/install-ltsp-10.jpeg" target="_blank"><img src="../simages/install-ltsp-10.jpeg" alt="" style="max-width:100%;"></a>   </p></li>
+<li><p>Raspi-LTSP will detect its installation location is wrong. Don't worry, 
+it will fix it. Select ok.<br>
+<a href="../images/install-ltsp-11.jpeg" target="_blank"><img src="../simages/install-ltsp-11.jpeg" alt="" style="max-width:100%;"></a>   </p></li>
+<li><p>Raspi-LTSP will offer to run a full install, select yes.<br>
+<a href="../images/install-ltsp-12.jpeg" target="_blank"><img src="../simages/install-ltsp-12.jpeg" alt="" style="max-width:100%;"></a>   </p></li>
+<li><p>Raspi-LTSP supports importing user data from an older Raspi-LTSP server. 
+See the <a href="../manage-users/migration.html">migration guide</a> for details. Select No.<br>
+<a href="../images/install-ltsp-14.jpeg" target="_blank"><img src="../simages/install-ltsp-14.jpeg" alt="" style="max-width:100%;"></a>   </p></li>
 <li><p>The install will take roughly 1-2 hours depending on processor speed
 and internet speed. Select ok and it will start the installation.
 You can now leave it to work.<br>
-<a href="../images/image19.jpeg" target="_blank"><img src="../simages/image19.jpeg" alt="" style="max-width:100%;"></a></p></li>
+<a href="../images/install-ltsp-15.jpeg" target="_blank"><img src="../simages/install-ltsp-15.jpeg" alt="" style="max-width:100%;"></a></p></li>
 <li><p>Around 1-2 hours later, the extra software dialog will be displayed.
 Here you can select any additional software you with to install.
 Libreoffice can be useful for a classroom; it is a free full office
@@ -111,18 +117,18 @@ Once you have finished, select cancel (or finished) to move on.<br>
 to the operating system, it must be recompressed which takes roughly
 5 minutes normally. Select ok.<br>
 <a href="../images/image22.jpeg" target="_blank"><img src="../simages/image22.jpeg" alt="" style="max-width:100%;"></a></p></li>
-<li><p>If using 2 network interface cards then check the IP address is
-correct. If you are only using 1 (most people), then the default
-will likely be correct. Select yes.<br>
-<a href="../images/image23.jpeg" target="_blank"><img src="../simages/image23.jpeg" alt="" style="max-width:100%;"></a></p></li>
-<li><p>Finally, you must decide if you need students to have Sudo access on
+<li><p>You must decide if you need students to have Sudo access on
 the Raspberry Pi. If you intend to work with the GPIO pins on the
 Raspberry Pi they will need it. You can really easily later enable
 or disable Sudo use in the Manage-Users submenu in the main software
-options. If in doubt, is recommended to just select yes.<br>
-<a href="../images/image24.jpeg" target="_blank"><img src="../simages/image24.jpeg" alt="" style="max-width:100%;"></a></p></li>
+options. If in doubt, is recommended to enable it by selecting yes.<br>
+<a href="../images/image24.jpeg" target="_blank"><img src="../simages/image24.jpeg" alt="" style="max-width:100%;"></a>   </p></li>
+<li><p>If using 2 network interface cards then check the IP address is
+correct. If you are only using 1 (most people), then the default
+will likely be correct. Select yes.<br>
+<a href="../images/image23.jpeg" target="_blank"><img src="../simages/image23.jpeg" alt="" style="max-width:100%;"></a>   </p></li>
 <li><p>Raspi-LTSP installation is now complete. The server has generated an
-SD card image which is located in /home/YourUser/piboot\
+SD card image which is located in /home/YourUser/piboot.
 You need to copy these files onto a blank formatted SD card and
 connect the Raspberry Pi to the network.<br>
 <a href="../images/image25.jpeg" target="_blank"><img src="../simages/image25.jpeg" alt="" style="max-width:100%;"></a></p></li>
