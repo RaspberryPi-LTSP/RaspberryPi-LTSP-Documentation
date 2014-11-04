@@ -15,6 +15,12 @@ First you need to grab the required equipment.
 - Some Ethernet cables.
 - A Raspberry Pi and SD card with a size of at least 128mb (so yes, 2gb, 4gb, 8gb etc cards will also work).
 
+##I dont have a spare old desktop/laptop computer sitting around currently..
+You can also install a virtual copy of Ubuntu onto another computer to try it out first. This comes with the advantage it is all self contained. If you don't like Raspi-LTSP, you can just delete the entire
+virtual machine (is contained in a single file).   
+Although there are a number of piece of software for virtualisation (and if you have your own you prefer to use, please use it), a few examples include Hyper-V, VMWare, Parallels.   
+I will be using Virtualbox, a free cross-platform virtualisation platform.   
+For more info on Virtualbox setup with Raspi-LTSP, check the [Virtualbox install guide](virtualbox.md)
 
 Installing
 -----------

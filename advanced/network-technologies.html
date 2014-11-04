@@ -63,20 +63,20 @@
 </table>
 
 <h1>
-<a name="user-content-understanding-raspberrypi-ltsp-network-technologies" class="anchor" href="#understanding-raspberrypi-ltsp-network-technologies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Understanding RaspberryPi LTSP network technologies</h1>
+<a id="user-content-understanding-raspberrypi-ltsp-network-technologies" class="anchor" href="#understanding-raspberrypi-ltsp-network-technologies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Understanding RaspberryPi LTSP network technologies</h1>
 
 <p>RaspberryPi LTSP has 2 main network technologies available to use.
 Both technologies have their advantages and disadvantages. By default NBD is used.</p>
 
 <h2>
-<a name="user-content-nfs" class="anchor" href="#nfs" aria-hidden="true"><span class="octicon octicon-link"></span></a>NFS</h2>
+<a id="user-content-nfs" class="anchor" href="#nfs" aria-hidden="true"><span class="octicon octicon-link"></span></a>NFS</h2>
 
 <p>NFS is an older standard that its competitor NBD. It has been proved reliable for years
 and is still the default for underlying LTSP for Ubuntu and Debian.
 Keep in mind though RaspberryPi LTSP's default is NBD.</p>
 
 <h3>
-<a name="user-content-advantages" class="anchor" href="#advantages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advantages</h3>
+<a id="user-content-advantages" class="anchor" href="#advantages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advantages</h3>
 
 <ul>
 <li>Old and reliable.</li>
@@ -86,7 +86,7 @@ Keep in mind though RaspberryPi LTSP's default is NBD.</p>
 </ul>
 
 <h3>
-<a name="user-content-disadvantages" class="anchor" href="#disadvantages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Disadvantages</h3>
+<a id="user-content-disadvantages" class="anchor" href="#disadvantages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Disadvantages</h3>
 
 <ul>
 <li>No compression enabled by default with LTSP so slower.</li>
@@ -94,13 +94,13 @@ Keep in mind though RaspberryPi LTSP's default is NBD.</p>
 </ul>
 
 <h2>
-<a name="user-content-nbd" class="anchor" href="#nbd" aria-hidden="true"><span class="octicon octicon-link"></span></a>NBD</h2>
+<a id="user-content-nbd" class="anchor" href="#nbd" aria-hidden="true"><span class="octicon octicon-link"></span></a>NBD</h2>
 
 <p>NBD is a much newer file sharing technology that is the default for RaspberryPi-LTSP.<br>
 With NBD, we have enabled squashfs compression to reduce network traffic by roughly 40%!   </p>
 
 <h3>
-<a name="user-content-advantages-1" class="anchor" href="#advantages-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advantages</h3>
+<a id="user-content-advantages-1" class="anchor" href="#advantages-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advantages</h3>
 
 <ul>
 <li>Raspberry Pis boos faster and load large applications faster.</li>
@@ -108,7 +108,7 @@ With NBD, we have enabled squashfs compression to reduce network traffic by roug
 </ul>
 
 <h3>
-<a name="user-content-disadvantages-1" class="anchor" href="#disadvantages-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Disadvantages</h3>
+<a id="user-content-disadvantages-1" class="anchor" href="#disadvantages-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Disadvantages</h3>
 
 <ul>
 <li>Changes are not live. You must recompress the operating system after each change with takes 5-10 minuets.</li>
@@ -116,7 +116,7 @@ With NBD, we have enabled squashfs compression to reduce network traffic by roug
 </ul>
 
 <h2>
-<a name="user-content-which-should-i-use-then" class="anchor" href="#which-should-i-use-then" aria-hidden="true"><span class="octicon octicon-link"></span></a>Which should I use then?</h2>
+<a id="user-content-which-should-i-use-then" class="anchor" href="#which-should-i-use-then" aria-hidden="true"><span class="octicon octicon-link"></span></a>Which should I use then?</h2>
 
 <p>Basically if you are testing out a number of changes (and don't want to wait 10 minuets for each test), then switch to NFS.<br>
 Although NFS is slower generally on the Raspberry Pis, it is a lot quicker to experiment with.<br>
@@ -124,7 +124,7 @@ For a live production environment with an operating system image you are happy w
 NBD is much quicker and lighter on your network. This is especially important if you are using over 15 clients at one time.</p>
 
 <h2>
-<a name="user-content-i-want-to-switch-the-network-technology-i-am-using-how-do-i-do-this" class="anchor" href="#i-want-to-switch-the-network-technology-i-am-using-how-do-i-do-this" aria-hidden="true"><span class="octicon octicon-link"></span></a>I want to switch the network technology I am using, how do I do this?</h2>
+<a id="user-content-i-want-to-switch-the-network-technology-i-am-using-how-do-i-do-this" class="anchor" href="#i-want-to-switch-the-network-technology-i-am-using-how-do-i-do-this" aria-hidden="true"><span class="octicon octicon-link"></span></a>I want to switch the network technology I am using, how do I do this?</h2>
 
 <ol>
 <li><p>First navigate to the <code>other</code> submenu in RaspberryPi LTSP and select <code>Network-Technology</code>.<br>
