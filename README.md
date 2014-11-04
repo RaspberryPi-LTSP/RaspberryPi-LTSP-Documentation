@@ -40,6 +40,7 @@ On top of this, an old desktop or laptop is required to run the server. It does 
   - [Installing Ubuntu](installation/installing-ubuntu.md)  
   - [Installing RaspberryPi LTSP](installation/installing-raspi-ltsp.md)
   - [Copy boot files to SD card](installation/sd-card-copy.md)
+  - [Installing Ubuntu using VirtualBox (optional)](installation/virtualbox.md)
 
 
 ##[Managing users](manage-users/README.md)   
