@@ -20,3 +20,4 @@ Information
 Advanced options
 -----
 - [Network Technologies (NFS and NBD)](network-technologies.md)
+- [Changing the default desktop and login screen background](change-background.md)
