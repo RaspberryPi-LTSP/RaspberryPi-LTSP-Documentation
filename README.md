@@ -61,7 +61,8 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 ##[Advanced options](advanced/README.md)
   - [Editing Raspbian outside of Raspi-LTSP](advanced/editing-outside.md)  
   - [Boot files explanation](advanced/boot-files.md)  
-  - [Understanding network technologies](advanced/network-technologies)
+  - [Understanding network technologies](advanced/network-technologies.md)
+  - [Changing the default desktop and login screen background](advanced/change-background.md)
 
 ##Other
 
