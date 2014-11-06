@@ -16,6 +16,7 @@ Information
 ------
 - [What do the boot files on the SD card do?](boot-files.md)
 - [Editing Raspbian outside of Raspi-LTSP utility](editing-outside.md)
+- [RaspberryPi-LTSP Benchmarks](benchmarks.md)
 
 Advanced options
 -----
