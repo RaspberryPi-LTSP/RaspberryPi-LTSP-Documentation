@@ -60,6 +60,7 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 - Epoptes classroom management software (Documentation not complete yet)
 
 ##[Advanced options](advanced/README.md)
+  - [RaspberryPi-LTSP Benchmarks](advanced/benchmarks.md)
   - [Editing Raspbian outside of Raspi-LTSP](advanced/editing-outside.md)  
   - [Boot files explanation](advanced/boot-files.md)  
   - [Understanding network technologies](advanced/network-technologies.md)
