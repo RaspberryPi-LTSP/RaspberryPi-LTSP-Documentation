@@ -1,5 +1,7 @@
 Virtualbox with Raspi-LTSP
 ---------------------------------------
+**Note this method is not officially supported although should work anyway.**   
+   
 Virtualbox provides a free, simple and easy to use solution for virtualising your Raspi-LTSP server.   
 
 ##Virtualisation... what is that?
