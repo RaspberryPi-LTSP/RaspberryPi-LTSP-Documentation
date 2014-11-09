@@ -25,4 +25,7 @@ Other than bootup, for most application no. Bootup takes roughly 30 seconds long
 Yes! As long as you are running at least version 0.7.2 and have updated the operating system and SD card image.
 To do that, run "Update-all" to update all software on the virtual OS followed by "Change-IP" and update the files on your SD card with the new ones.
 
+- **I was running Release 0.10.25 and can't update to newer versions?**   
+There was a bug in version 0.10.25 which broke the auto updater. If you applied this update, please manually redownload Raspi-LTSP using ```wget --content-disposition http://pi-ltsp.net/downloadalpha``` followed by ```sudo bash Pi_ltsp```. This should manually apply the most recent update.   
+
 ![](images/raspi-desktop.jpeg)
