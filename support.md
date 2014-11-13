@@ -14,4 +14,4 @@ You can launch the freenode webchat site from [here](https://webchat.freenode.ne
 Remember to enter the channel as #ltsp!
 
 ##Twitter
-You can also drop me a tweet. My twitter name is [@gbaman1](https://twitter.com/gbaman1).
+You can also drop a tweet to the project twitter account  [@RaspiLTSP](https://twitter.com/RaspiLTSP).
