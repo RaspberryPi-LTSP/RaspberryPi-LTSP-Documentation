@@ -51,7 +51,7 @@ Assuming you are connecting the SD card to the server (via USB or internal SD ca
 12. Finally hit the eject icon beside the SD card and remove it from the
     computer. Now insert it into a Raspberry Pi, plug the network cable
     in along with keyboard and mouse and plug in the power. The
-    Raspberry Pi should then boot successfully.
+    Raspberry Pi should then boot successfully. Don't worry if you get an error complaining about the desktop environment, this is only a notice and not a problem. It only occurs with accounts that have logged directly onto the server.
     ![](../images/image36.jpeg)
 
-If the Raspberry Pi fails to boot, you may want to check the troubleshooting section
+If the Raspberry Pi fails to boot, check out the [Support section](../support.md).
