@@ -68,7 +68,7 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 
 ##Other
 
-- Troubleshooting (Documentation not complete yet)
+- [Troubleshooting](troubleshooting/README.md)
 - [Frequently asked questions](faq.md)
 
 #Contributing
