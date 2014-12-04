@@ -34,20 +34,20 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 <br>
 
 #To get started [click here](installation/getting-started.md)
-   
-<br>   
-   
+
+<br>
+
 #Main documentation list
 ![](images/raspi-ltsp-home.jpeg)
 
-##[Getting started](installation/getting-started.md)    
+##[Getting started](installation/getting-started.md)
   - [Installing Ubuntu](installation/installing-ubuntu.md)  
   - [Installing RaspberryPi LTSP](installation/installing-raspi-ltsp.md)
   - [Copy boot files to SD card](installation/sd-card-copy.md)
   - [Installing Ubuntu using VirtualBox (optional)](installation/virtualbox.md)
 
 
-##[Managing users](manage-users/README.md)   
+##[Managing users](manage-users/README.md)
   - [Creating a new user](manage-users/creating-users.md)
   - [Deleting a user](manage-users/deleting-users.md)  
   - [Changing a users password](manage-users/change-password.md)  
@@ -59,7 +59,7 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 - [Installing additional software](installation/installing-software.md)  
 - [Configuring automatic backups](backups/README.md)
 - [Collecting students work](collect-work.md)  
-- [Updating SD card image](sd-card-update.md) 
+- [Updating SD card image](sd-card-update.md)
 - [Shared folders](shared-folders/README.md)
 - Epoptes classroom management software (Documentation not complete yet)
 
@@ -69,6 +69,7 @@ On top of this, an old desktop or laptop is required to run the server. It does 
   - [Boot files explanation](advanced/boot-files.md)  
   - [Understanding network technologies](advanced/network-technologies.md)
   - [Changing the default desktop and login screen background](advanced/change-background.md)
+  - [Changing keyboard mapping](advanced/keyboard-layout.md)
 
 ##Other
 
@@ -76,11 +77,10 @@ On top of this, an old desktop or laptop is required to run the server. It does 
 - [Frequently asked questions](faq.md)
 
 #Contributing
-All the documentation written in markdown can be found in the [Github repository](https://github.com/RaspberryPi-LTSP/RaspberryPi-LTSP-Documentation).   
+All the documentation written in markdown can be found in the [Github repository](https://github.com/RaspberryPi-LTSP/RaspberryPi-LTSP-Documentation).
 If you see **issues/typos/mistakes/etc** in this documentation please feel free to send in [pull requests](https://github.com/RaspberryPi-LTSP/RaspberryPi-LTSP-Documentation/pulls) to fix them or open an [issue](https://github.com/RaspberryPi-LTSP/RaspberryPi-LTSP-Documentation/issues).  
 If you want to **contribute** to the documentation (**please do!!**) then check out the [contributing guide](CONTRIBUTING.md)
 
 #Support
-Having issues with Raspi-LTSP, have a general question or just want some help setting up Raspi-LTSP in your school?   
+Having issues with Raspi-LTSP, have a general question or just want some help setting up Raspi-LTSP in your school?
 [Check out the support page on details of how to get in touch.](support.md)
-   
