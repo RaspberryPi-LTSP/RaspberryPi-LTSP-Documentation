@@ -77,7 +77,9 @@ So although it is possible, the amount of work required to integrate common driv
 Other than bootup, for most application no. Bootup takes roughly 30 seconds longer on most networks. For more detailed benchmarks, check out the benchmark section - <a href="https://github.com/gbaman/RaspberryPi-LTSP#benchmarks">https://github.com/gbaman/RaspberryPi-LTSP#benchmarks</a></p></li>
 <li><p><strong>Is the Raspberry Pi model B+ supported by Raspi-LTSP?</strong>
 Yes! As long as you are running at least version 0.7.2 and have updated the operating system and SD card image.
-To do that, run "Update-all" to update all software on the virtual OS followed by "Change-IP" and update the files on your SD card with the new ones.</p></li>
+To do that, run "Update-all" to update all software on the virtual OS followed by "Change-IP" and update the files on your SD card with the new ones.   </p></li>
+<li><p><strong>Is the Raspberry Pi 2 (model B) supported by Raspi-LTSP?</strong><br>
+Currently right now (5th February 2015) the answer to this is no. We are still waiting for the relevant kernel file updates to become available. When an update is released to support the Raspberry Pi 2, it will be automatically pushed to your Raspi-LTSP SD cards on boot.   </p></li>
 <li><p><strong>I was running Release 0.10.25 and can't update to newer versions?</strong><br>
 There was a bug in version 0.10.25 which broke the auto updater. If you applied this update, please manually redownload Raspi-LTSP using <code>wget --content-disposition http://pi-ltsp.net/downloadalpha</code> followed by <code>sudo bash Pi_ltsp</code>. This should manually apply the most recent update.   </p></li>
 </ul>
