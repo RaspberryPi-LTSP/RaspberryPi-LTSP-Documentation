@@ -70,3 +70,15 @@ VirtualBox has a number of ways to create a virtual network card for the server.
 ![Virtualbox](../images/virtualbox-11.jpeg) 
 4. Once bridged adapter is selected, select your network card from the dropdown box. Most computers come with 2 network cards, a wired Ethernet card (you should be using this one) and a wireless card. **Make sure the wired Ethernet card is selected!**   
 If you do not know which is the wired and wireless card, Googling their names may help.
+
+###Guest additions   
+It can be a good idea to install the Virtualbox guest additions. These are additional software modules/drivers to improve compatibility with Virtualbox.   
+Once you install them, a few additional features are added, including support for bidirectional copy and paste support between the virtual machine and the host operating system, more importantly it adds the missing screen resolution detection modules for Ubuntu 14.04, allowing you to resize the screen.    
+To install them, launch the Ubuntu virtual machine, open a terminal and enter    
+```sudo apt-get install -y virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11```   
+
+Once it is complete, you will want to reboot Ubuntu to apply them.    
+
+##Virtualbox extension pack   
+A majority of hardware will just work out of the box without any issues with Virtualbox, but some obscure or random hardware may not due to licensing issues. Because of the open source licence virtualbox is provided with, closed source (aka source code for driver is kept secret) hardware drivers are not included in the standard installation.   
+Fortunately, these are still available, just only as compile binaries under a different licence. If you are having issues with a piece of hardware (a network card for example), you may want to install these. They can be found on the [Virtualbox download page](https://www.virtualbox.org/wiki/Downloads).     

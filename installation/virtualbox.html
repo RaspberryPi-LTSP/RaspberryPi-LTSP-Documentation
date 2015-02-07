@@ -154,6 +154,22 @@ To open the settings panel, right click the virtual machine in VirtualBox and se
 4. Once bridged adapter is selected, select your network card from the dropdown box. Most computers come with 2 network cards, a wired Ethernet card (you should be using this one) and a wireless card. <strong>Make sure the wired Ethernet card is selected!</strong><br>
 If you do not know which is the wired and wireless card, Googling their names may help.</p>
 
+<h3>
+<a id="user-content-guest-additions" class="anchor" href="#guest-additions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Guest additions</h3>
+
+<p>It can be a good idea to install the Virtualbox guest additions. These are additional software modules/drivers to improve compatibility with Virtualbox.<br>
+Once you install them, a few additional features are added, including support for bidirectional copy and paste support between the virtual machine and the host operating system, more importantly it adds the missing screen resolution detection modules for Ubuntu 14.04, allowing you to resize the screen.<br>
+To install them, launch the Ubuntu virtual machine, open a terminal and enter<br>
+<code>sudo apt-get install -y virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11</code>   </p>
+
+<p>Once it is complete, you will want to reboot Ubuntu to apply them.    </p>
+
+<h2>
+<a id="user-content-virtualbox-extension-pack" class="anchor" href="#virtualbox-extension-pack" aria-hidden="true"><span class="octicon octicon-link"></span></a>Virtualbox extension pack</h2>
+
+<p>A majority of hardware will just work out of the box without any issues with Virtualbox, but some obscure or random hardware may not due to licensing issues. Because of the open source licence virtualbox is provided with, closed source (aka source code for driver is kept secret) hardware drivers are not included in the standard installation.<br>
+Fortunately, these are still available, just only as compile binaries under a different licence. If you are having issues with a piece of hardware (a network card for example), you may want to install these. They can be found on the <a href="https://www.virtualbox.org/wiki/Downloads">Virtualbox download page</a>.     </p>
+
               </div>
             </div>
           </div>
