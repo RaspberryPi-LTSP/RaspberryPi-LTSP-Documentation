@@ -60,33 +60,160 @@
 </table>
 
 <h2>
-<a id="user-content-advanced-options" class="anchor" href="#advanced-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advanced options</h2>
+<a id="user-content-understanding-kernels-on-the-raspberry-pi-and-raspi-ltsp" class="anchor" href="#understanding-kernels-on-the-raspberry-pi-and-raspi-ltsp" aria-hidden="true"><span class="octicon octicon-link"></span></a>Understanding kernels on the Raspberry Pi and Raspi-LTSP</h2>
 
-<p><a href="../images/other-1.jpeg" target="_blank"><img src="../simages/other-1.jpeg" alt="" style="max-width:100%;"></a>  </p>
-
-<p>RaspberryPi LTSP has a number of optioned for advanced users who want to fiddle with the configuration of the system.
-These options are not aimed at beginners.
-In this section you will find information on how some of the backend features
-are Raspberry Pi LTSP work plus how to configure some of them.</p>
+<p><strong><em>Note</em></strong> -  This guide is provided as is, it is unlikely any additional support will be offered for its contents if you get stuck. It is only designed for more advanced Raspberry Pi / Linux users. If you do have issues though, you could always try you luck at <a href="../support.html">contacting support</a>.</p>
 
 <h2>
-<a id="user-content-information" class="anchor" href="#information" aria-hidden="true"><span class="octicon octicon-link"></span></a>Information</h2>
+<a id="user-content-what-is-a-kernel" class="anchor" href="#what-is-a-kernel" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is a kernel?</h2>
 
-<ul>
-<li><a href="boot-files.html">What do the boot files on the SD card do?</a></li>
-<li><a href="editing-outside.html">Editing Raspbian outside of Raspi-LTSP utility</a></li>
-<li><a href="benchmarks.html">RaspberryPi-LTSP Benchmarks</a></li>
-</ul>
+<p>"In computing, the kernel is a computer program that manages I/O (input/output) requests from software, and translates them into data processing instructions for the central processing unit and other electronic components of a computer. The kernel is a fundamental part of a modern computer's operating system." - <a href="http://en.wikipedia.org/wiki/Kernel_%28operating_system%29">Wikipedia</a>        </p>
+
+<p>The kernel is a vital part of Raspbian (and any operating system), it is the bridge between the computer hardware and the software on top. It is incredibly complex and is generally just huge! The standard Linux kernel currently (February 2015) has over 17 million lines of code contributed by over 13,000 people.<br>
+It contains all the drivers/modules required to work with the hardware. Sometimes if you want a very specialist piece of hardware to work, you may need to compile your own kernel.</p>
 
 <h2>
-<a id="user-content-advanced-options-1" class="anchor" href="#advanced-options-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advanced options</h2>
+<a id="user-content-raspberry-pi-kernels" class="anchor" href="#raspberry-pi-kernels" aria-hidden="true"><span class="octicon octicon-link"></span></a>Raspberry Pi kernels</h2>
+
+<p>The kernel for the Raspberry Pi can be found on the /boot partition (the FAT32 partition you can open on Windows, Mac and Linux).<br>
+For the Raspberry Pi 1 (B, B+, A, A+) it is called kernel.img.<br>
+For the Raspberry Pi 2 (B) it is called kernel7.img.  </p>
+
+<p>The kernel is one of the few bits of software that wasn't able to run on both the Raspberry Pi 1 CPU (ARM6) and the Raspberry Pi 2 (ARM7) with the same version.<br>
+Instead the 2 versions had to be compiled separately and the firmware selects the correct one depending on the hardware it detects on boot.   </p>
+
+<h2>
+<a id="user-content-kernel-sources" class="anchor" href="#kernel-sources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kernel sources</h2>
+
+<p>There are 2 main sources for Raspberry Pi kernels. Both have their advantages and disadvantages.     </p>
 
 <ul>
-<li><a href="network-technologies.html">Network Technologies (NFS and NBD)</a></li>
-<li><a href="change-background.html">Changing the default desktop and login screen background</a></li>
-<li><a href="keyboard-layout.html">Changing keyboard mapping</a></li>
-<li><a href="kernels.html">Understanding kernels on the Raspberry Pi and Raspi-LTSP</a></li>
+<li>Official Raspberry Pi foundation kernels<br>
+</li>
+<li>Unofficial Raspbian team kernels</li>
 </ul>
+
+<h4>
+<a id="user-content-raspberry-pi-foundation-kernels" class="anchor" href="#raspberry-pi-foundation-kernels" aria-hidden="true"><span class="octicon octicon-link"></span></a>Raspberry Pi foundation kernels</h4>
+
+<p>The Raspberry Pi foundation kernels are the official kernels the Raspberry Pi is shipped with. They are considerably more stripped down than the Raspbian team kernels, but are always the most up to date. For new hardware (like the new USB chip in the B+ or new CPU in Raspberry Pi 2 B), they available on day 1 of the hardware release.<br>
+They have a number of issues including not being correctly in line with the standard Debian kernels and lacking the header files, required to build custom kernel modules with.<br>
+They also don't follow the normal installation method and package names in the Raspbian software repositories.
+For the average user though, these 2 downsides make no difference.<br>
+The kernel is though currently lacking AUFS support. AUFS is a virtual module for Raspi-LTSP. </p>
+
+<h4>
+<a id="user-content-raspbian-team-kernels" class="anchor" href="#raspbian-team-kernels" aria-hidden="true"><span class="octicon octicon-link"></span></a>Raspbian team kernels</h4>
+
+<p>The Raspbian team maintains their own kernels. The Raspbian team maintain the Raspbian software repositories. Their kernels are based off the standard Debian kernels, and so contain a larger array of modules to support even more hardware. Due to this fact alone, their kernels are larger and take longer to build, although this is rarely an issue.<br>
+They include proper header files for compiling your own modules and generally more closely follow the standard Debian way of handling kernels, including the standard Debian way of packaging kernels and distributing them using apt.<br>
+One of the extra modules they include is AUFS, a vital module for Raspi-LTSP network booting that is currently missing from the Raspberry Pi foundation kernels.<br>
+One of their major downsides though is they usually arrive quite a bit later than the Raspberry Pi foundation kernels, sometimes a number of weeks later.    </p>
+
+<h3>
+<a id="user-content-initramfs" class="anchor" href="#initramfs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initramfs</h3>
+
+<p>When talking about kernels, another key thing to discuss is the initramfs (also sometimes known as initrd although they are slightly different).<br>
+The initramfs is a tiny compressed entire filesystem in a single file. It contains a complete mini linux filesystem in 5mb-10mb.<br>
+The idea behind it is it is an extension of the kernel, containing a number of modules and startup scripts. It can be easily edited, while editing the kernel would require completely recompiling it again! It also allows you to start a mini operating system to load more advanced modules to use as a springboard for loading more advanced operating systems in complicated circumstances, for example network booting!<br>
+(If doing this on Raspi-LTSP, enter run <code>sudo ltsp-chroot</code> before running the below commands).<br>
+You can generate an initramfs using the <code>mkinitramfs</code> command. For example, to build one for the 3.18 kernels, first get the exact version you with to build with using <code>ls /lib/modules/</code><br>
+Then use <code>sudo mkinitramfs /boot/myAwesomeInitramfs3.18.img 3.18.6-v7+</code>.<br>
+<strong>Note - You must build the initramfs with the exact same kernel version you intend to use. Even if they are out by one minor version or they are out of date with the version on the server, devices (like keyboards and mice) may not work</strong></p>
+
+<h2>
+<a id="user-content-so-where-does-raspi-ltsp-come-into-all-this" class="anchor" href="#so-where-does-raspi-ltsp-come-into-all-this" aria-hidden="true"><span class="octicon octicon-link"></span></a>So where does Raspi-LTSP come into all this?</h2>
+
+<p>With Raspi-LTSP, the kernel and initramfs version is extremely important.<br>
+Both live on the SD card with normal Raspberry Pi firmware and all the config files.<br>
+<strong>Raspi-LTSP currently uses the Raspbian team kernels as they contain the required extra modules (AUFS, SquashFS and NBD) which are missing from the Raspberry Pi foundation kernels.</strong> - this is being worked on though.<br>
+You may notice after software updates to Raspi-LTSP, sometimes your Raspi-LTSP clients will randomly reboot just after hitting the login screen a single time. This is because they have detected they are running an out of date version of the kernel files (mismatch with the version on the server) and the server has automatically copied the new kernel and initramfs over to the SD card. It must restart the Pi to apply the update. It should only happen a single time for each SD card on a new kernel update.   </p>
+
+<h2>
+<a id="user-content-i-am-impatient-and-want-to-try-the-new-kernel-features-right-now" class="anchor" href="#i-am-impatient-and-want-to-try-the-new-kernel-features-right-now" aria-hidden="true"><span class="octicon octicon-link"></span></a>I am impatient and want to try the new kernel features right now!</h2>
+
+<p>You can do this if you compile your own kernel.<br>
+Kernel compiling is an incredibly CPU intensive job. Although it could be done natively on the Raspberry Pi, it would take many hours. Fortunately we can cross compile (compile it on another more powerful computer) it.   </p>
+
+<h4>
+<a id="user-content-building-the-kernel" class="anchor" href="#building-the-kernel" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building the kernel</h4>
+
+<p>Adafruit has an excellent kernel building tool that runs on Windows, Mac and Linux called the <a href="https://learn.adafruit.com/raspberry-pi-kernel-o-matic/overview">Kernel-O-Matic</a> that is a great place to start.<br>
+Once it is installed (and you have got as far as <code>vagrant ssh</code>), you need to grab a few extra bits.<br>
+The main one being AUFS.<br>
+<code>cd /rpi_linux/</code><br>
+<code>git clone git://aufs.git.sourceforge.net/gitroot/aufs/aufs3-standalone.git</code><br>
+<code>cd aufs3-standalone</code>
+<code>git checkout origin/aufs3.18</code> (change the 3.18 to whatever version you are working with)<br>
+<code>cp -rp *.patch ../</code><br>
+<code>cp -rp fs ../</code><br>
+<code>cp -rp Documentation/ ../</code><br>
+<code>cp -rp include/ ../</code>
+<code>cd ..</code><br>
+<code>patch -p1 &lt; aufs3-kbuild.patch</code> (may be a few errors, don't worry)<br>
+<code>patch -p1 &lt; aufs3-base.patch</code><br>
+<code>patch -p1 &lt; aufs3-proc_map.patch</code><br>
+<code>patch -p1 &lt; aufs3-standalone.patch</code><br>
+<code>patch -p1 &lt; aufs3-mmap.patch</code><br>
+Now that your kernel is now patched with AUFS support, is time to compile it.<br>
+Launch adabuild with <code>sudo adabuild</code><br>
+Give it a minuite or 2 for the kernel menu to appear. You must enable the 3 extra modules.<br>
+To enable a module, hit y when it is selected.    </p>
+
+<ul>
+<li>Network block device : <code>Device Drivers</code>, <code>Block devices</code>, <code>Network block device support</code><br>
+</li>
+<li>SquashFS : <code>File systems</code>, <code>Miscellaneous filesystems</code>, <code>SquashFS 4.0 - Squashed filesystem support</code><br>
+</li>
+<li>AUFS : <code>File systems</code>, <code>Miscellaneous filesystems</code>, <code>Aufs (Advanced multi layered unification filesystem)</code> - It is right at the bottom.<br>
+</li>
+</ul>
+
+<p>Finally, select exit at the bottom (tab then enter).<br>
+The kernel will start compiling. You will need to do the same for the Pi 2 kernel once the Pi 1 kernel is completed.   </p>
+
+<h4>
+<a id="user-content-installing-the-new-kernel" class="anchor" href="#installing-the-new-kernel" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing the new kernel</h4>
+
+<p>The new kernel is packaged up inside a .deb file. Follow the instructions on the kernel-o-matic guide on how to get the newly created .deb file.   </p>
+
+<ul>
+<li>Once you have it, move it to your Raspi-LTSP server (via pendrive or FTP) and copy the file into somewhere like <code>/opt/ltsp/armhf/tmp</code>.<br>
+</li>
+<li>Next, switch to the Raspbian OS with <code>sudo ltsp-chroot --arch armhf</code>.<br>
+</li>
+<li>Install the .deb package using <code>dpkg -i /tmp/whatYouNamedIt.deb</code>.<br>
+</li>
+</ul>
+
+<h4>
+<a id="user-content-generating-the-initramfs" class="anchor" href="#generating-the-initramfs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Generating the initramfs</h4>
+
+<p>We now need to generate the initramfs for the new kernel. To do so (continuing on from above)   </p>
+
+<ul>
+<li>Build the initramfs with <code>sudo mkinitramfs /boot/myAwesomeInitramfs3.18.img 3.18.6-v7+</code>. (Remember to change the version number if need be, see initramfs section above).<br>
+</li>
+<li>At this point it would be worth starting a manual recompress of the Raspbian install, the tool can be found in Raspi-LTSP, in "other" and is called <code>NBD-recompress</code>.<br>
+</li>
+</ul>
+
+<h4>
+<a id="user-content-install-it-on-the-sd-card" class="anchor" href="#install-it-on-the-sd-card" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install it on the SD card</h4>
+
+<ul>
+<li>First, start with a normal Raspi-LTSP SD card.<br>
+</li>
+<li>Delete anything with pervious kernel versions in its name (e.g.<code>vmlinuz-3.12-1-rpi</code> or <code>initrd.img-3.12-1-rpi</code> etc). Also, if you have it, delete the <code>kernel.img</code> and <code>kernel7.img</code>.<br>
+</li>
+<li>Copy the new kernel and initramfs from /opt/ltsp/armhf/boot to the SD card. They will be named <code>kernel.img</code>, <code>kernel7.img</code>, <code>myAwesomeInitramfs3.18.img</code>.<br>
+</li>
+<li>Finally, you need to edit the config.txt file to make sure it knows what to look for when booting. Find the <code>initramfs</code> line. Change it to <code>initramfs myAwesomeInitramfs3.18.img</code>. If there is a line containing <code>kernel</code>, remove the line.<br>
+</li>
+</ul>
+
+<p>You are now ready to boot your Raspberry Pi with your custom kernel. You can use the same instructions to add additional modules you may need.<br>
+Note that Raspi-LTSP auto updates its kernel files if new version are released by the normal channels, so they may overwrite your kernels, so always keep a backup of them.   </p>
 
               </div>
             </div>
