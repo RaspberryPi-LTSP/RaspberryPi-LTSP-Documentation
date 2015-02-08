@@ -19,3 +19,4 @@ Advanced options
 - [Network Technologies (NFS and NBD)](network-technologies.md)
 - [Changing the default desktop and login screen background](change-background.md)
 - [Changing keyboard mapping](keyboard-layout.md)
+- [Understanding kernels on the Raspberry Pi and Raspi-LTSP](kernels.md)
