@@ -1,7 +1,8 @@
 Understanding kernels on the Raspberry Pi and Raspi-LTSP
 -----------------------------------
 
-***Note*** -  This guide is provided as is, it is unlikely any additional support will be offered for its contents if you get stuck. It is only designed for more advanced Raspberry Pi / Linux users. If you do have issues though, you could always try you luck at [contacting support](../support.md).
+***Note*** -  This guide is provided as is, it is unlikely any additional support will be offered for its contents if you get stuck. It is only designed for more advanced Raspberry Pi / Linux users. If you do have issues though, you could always try you luck at [contacting support](../support.md).   
+***Note 2*** - Take this document as draft level quality as it has not been double checked by all relavent experts yet, it is only what I have been able to gather myself over the past year.
 
 ##What is a kernel?
 "In computing, the kernel is a computer program that manages I/O (input/output) requests from software, and translates them into data processing instructions for the central processing unit and other electronic components of a computer. The kernel is a fundamental part of a modern computer's operating system." - [Wikipedia](http://en.wikipedia.org/wiki/Kernel_%28operating_system%29)        
@@ -102,3 +103,5 @@ We now need to generate the initramfs for the new kernel. To do so (continuing o
 
 You are now ready to boot your Raspberry Pi with your custom kernel. You can use the same instructions to add additional modules you may need.   
 Note that Raspi-LTSP auto updates its kernel files if new version are released by the normal channels, so they may overwrite your kernels, so always keep a backup of them.   
+   
+**Instructions for building AUFS based off [this excellent blog post](http://rpitc.blogspot.co.uk/p/kernel-rebuild.html).**
