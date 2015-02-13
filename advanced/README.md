@@ -12,7 +12,8 @@ Information
 ------
 - [What do the boot files on the SD card do?](boot-files.md)
 - [Editing Raspbian outside of Raspi-LTSP utility](editing-outside.md)
-- [RaspberryPi-LTSP Benchmarks](benchmarks.md)
+- [RaspberryPi-LTSP Benchmarks](benchmarks.md)   
+- [Using SSH to connect to the Raspberry Pis](ssh-information.md)
 
 Advanced options
 -----
