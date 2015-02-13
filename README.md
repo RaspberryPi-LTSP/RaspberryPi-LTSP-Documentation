@@ -71,6 +71,7 @@ On top of this, an old desktop or laptop is required to run the server. It does 
   - [Changing the default desktop and login screen background](advanced/change-background.md)
   - [Changing keyboard mapping](advanced/keyboard-layout.md)
   - [Understanding kernels on the Raspberry Pi and Raspi-LTSP](advanced/kernels.md)
+  - [Using SSH to connect to the Raspberry Pis](ssh-information.md)   
 
 ##Other
 

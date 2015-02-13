@@ -59,37 +59,35 @@
 </tbody>
 </table>
 
-<h2>
-<a id="user-content-advanced-options" class="anchor" href="#advanced-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advanced options</h2>
+<h1>
+<a id="user-content-understanding-ssh-on-the-raspberry-pis" class="anchor" href="#understanding-ssh-on-the-raspberry-pis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Understanding SSH on the Raspberry Pis</h1>
 
-<p><a href="../images/other-1.jpeg" target="_blank"><img src="../simages/other-1.jpeg" alt="" style="max-width:100%;"></a>  </p>
-
-<p>RaspberryPi LTSP has a number of optioned for advanced users who want to fiddle with the configuration of the system.
-These options are not aimed at beginners.
-In this section you will find information on how some of the backend features
-are Raspberry Pi LTSP work plus how to configure some of them.</p>
-
-<h2>
-<a id="user-content-information" class="anchor" href="#information" aria-hidden="true"><span class="octicon octicon-link"></span></a>Information</h2>
+<p>By default, Raspberry Pis using Raspi-LTSP do not by default allow ssh access.<br>
+It though can be extremely useful for debugging to be able to access a Raspberry Pi over SSH.<br>
+There is though a few things you need to be aware of.   </p>
 
 <ul>
-<li><a href="boot-files.html">What do the boot files on the SD card do?</a></li>
-<li><a href="editing-outside.html">Editing Raspbian outside of Raspi-LTSP utility</a></li>
-<li>
-<a href="benchmarks.html">RaspberryPi-LTSP Benchmarks</a><br>
+<li>The Raspi-LTSP users are <strong>not stored on the Raspberry Pis</strong>. They are stored on the server.<br>
 </li>
-<li><a href="ssh-information.html">Using SSH to connect to the Raspberry Pis</a></li>
+<li>The Raspberry Pi verifies the provided credentials when a user enters them by using an SSH connection to the server instead of storing the credentials locally.<br>
+</li>
+<li>SSH is enabled by default, although there are no valid user accounts enabled. To SSH into a Raspberry Pi on Raspi-LTSP, you must enable the root account using <code>sudo ltsp-chroot --arch armhf passwd</code>. Don't forget to recompress the operating system after changing it (can be found in other/NBD-recompress in Raspi-LTSP). You can log in as root.<br>
+</li>
 </ul>
 
 <h2>
-<a id="user-content-advanced-options-1" class="anchor" href="#advanced-options-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advanced options</h2>
+<a id="user-content-troubleshooting" class="anchor" href="#troubleshooting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Troubleshooting</h2>
 
-<ul>
-<li><a href="network-technologies.html">Network Technologies (NFS and NBD)</a></li>
-<li><a href="change-background.html">Changing the default desktop and login screen background</a></li>
-<li><a href="keyboard-layout.html">Changing keyboard mapping</a></li>
-<li><a href="kernels.html">Understanding kernels on the Raspberry Pi and Raspi-LTSP</a></li>
-</ul>
+<h3>
+<a id="user-content-i-dont-know-what-the-ip-address-of-the-raspberry-pi-is" class="anchor" href="#i-dont-know-what-the-ip-address-of-the-raspberry-pi-is" aria-hidden="true"><span class="octicon octicon-link"></span></a>I don't know what the IP address of the Raspberry Pi is?</h3>
+
+<p>Open a terminal on the Raspberry Pi and enter <code>hostname -I</code>. It should print the current IP address of the Raspberry Pi.   </p>
+
+<h3>
+<a id="user-content-i-am-getting-key-errors-when-trying-to-connect-to-the-raspberry-pi-or-getting-other-random-errors" class="anchor" href="#i-am-getting-key-errors-when-trying-to-connect-to-the-raspberry-pi-or-getting-other-random-errors" aria-hidden="true"><span class="octicon octicon-link"></span></a>I am getting key errors when trying to connect to the Raspberry Pi or getting other random errors.</h3>
+
+<p>Sometimes the ssh keys are not generated correctly on Raspi-LTSP clients.<br>
+To regenerate the keys, reconfigure the openssh-server using <code>sudo ltsp-chroot --arch armhf dpkg-reconfigure openssh-server</code>. Don't forget to recompress the operating system after changing it (can be found in other/NBD-recompress in Raspi-LTSP).   </p>
 
               </div>
             </div>
