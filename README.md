@@ -8,7 +8,11 @@ Raspberry Pi LTSP Documentation
 
 ![](images/desktop-sonic-pi.jpeg)
 
-
+#RaspberryPi-LTSP has been replaced with PiNet. This site is kept for archive purposes only. For all future installs, please use PiNet.
+#PiNet website - http://pinet.org.uk   
+   
+   
+---
 
 #What is Raspi-LTSP?
 Raspi-LTSP is a utility for setting up infrastructure required for a classroom set of Raspberry Pis.
